@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+.nav{
+    display: flex;
+    align-items: flex-end;
+    align-content: center;
+    justify-items: center;
+}
+.main{
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    display: flex;
+}
+.card img{
+    width: 200px;
+}

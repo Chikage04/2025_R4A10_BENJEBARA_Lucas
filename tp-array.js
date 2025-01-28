@@ -14,6 +14,7 @@ module.exports = {
   // en utilisant une méthode de tableau
   Q1() {
     let tab = []
+ 
     getArray().forEach(element => {
       
         if (element >= 15) {
@@ -83,7 +84,7 @@ module.exports = {
 
   //10) Renvoyez le type de la variable ARRAY
   Q10() {
-    return typeof(Array)
+    return typeof getArray()
   },
 
   //11) En utilisant une méthode spécifique aux tableaux, renvoyer un booléen vérifiant que le résultat de getArray() est bien un tableau
