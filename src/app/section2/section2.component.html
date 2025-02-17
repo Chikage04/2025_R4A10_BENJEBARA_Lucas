@@ -1,0 +1,30 @@
+<body>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('lien_header');
+
+    menuBtn.addEventListener('click', function() {
+      menu.classList.toggle('active');
+    });
+  });
+</script>
+
+<main>
+  <div>
+    <h1>Our Solutions</h1>
+    <p>We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
+  </div>
+  <ul class="grid">
+      @for (service of services; track service) {
+        <li class="card">
+      <img class="card_image" [src]="service.image" [alt]="service.title">
+      <hr />
+      <h2>{{ service.title }}</h2>
+      <p>{{ service.description }}</p>
+    </li>
+      }
+  </ul>
+  <button class="btn">Discover More</button>
+</main>
+</body>

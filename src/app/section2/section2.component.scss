@@ -1,0 +1,134 @@
+.grid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 25px;
+}
+
+.card {
+  padding: 15px;
+  font-weight: bold;
+  background-color: #F9FAFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  border: solid;
+  padding: 10px 5%;
+  position: relative;
+}
+
+main {
+  margin: 5%;
+  margin-top: 0;
+}
+
+footer {
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: solid;
+  padding: 2%;
+}
+
+.hyperlien_header {
+  padding: 2%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#lien_header {
+  padding-left: 70%;
+}
+
+br {
+  margin-bottom: 5%;
+}
+
+#menu-btn {
+  display: none;
+}
+
+@media screen and (width >= 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (width >= 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/** A partir de 2000px de large, retour au style précédent */
+@media screen and (width >= 1200px) and (width < 2000px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #666;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #4A6CF7;
+  padding-bottom: 10px;
+  color: #333;
+}
+
+.btn {
+  width: 200px;
+  height: 60px;
+  background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 4% auto 0;
+
+  &:hover {
+    background-color: #3B5BDB;
+  }
+}

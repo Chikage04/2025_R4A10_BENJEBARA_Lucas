@@ -1,0 +1,154 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 50vw;
+  height: 400px;
+  padding: 25px;
+  border-radius: 15px;
+  background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+  left: 22vw;
+  bottom: 60px;
+}
+
+.feedback-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 32px;
+  color: #F0F4FF;
+  margin-bottom: 15px;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 25%;
+    height: 3px;
+    margin: 5% auto;
+    background-color: #F0F4FF;
+  }
+}
+
+.user-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1 1 100%;
+  gap: 20px;
+}
+
+.user-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid #F0F4FF;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.user-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #F0F4FF;
+}
+
+.user-role {
+  font-size: 16px;
+  margin-top: 8px;
+  color: #F0F4FF;
+}
+
+.feedback-text {
+  position: absolute;
+  top: 35%;
+  right: 25px;
+  width: 100%;
+  max-width: 450px;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #F0F4FF;
+  line-height: 1.6;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  gap: 25px;
+
+  button {
+    padding: 12px 24px;
+    font-size: 28px;
+    color: #F0F4FF;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #A3B8FF;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: auto;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .feedback-text {
+    position: relative;
+    top: 0;
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+
+    button {
+      padding: 10px 20px;
+      font-size: 22px;
+    }
+  }
+}

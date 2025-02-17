@@ -1,0 +1,17 @@
+<div class="container">
+  <h2>Feedback from our clients</h2>
+  <div class="feedback-content">
+    <div class="user-info">
+      <img [src]="currentFeedback.profileImage" alt="User Image" class="user-img">
+      <div class="user-details">
+        <p class="user-name">{{ currentFeedback.title }}</p>
+        <p class="user-role">{{ currentFeedback.work }}</p>
+      </div>
+    </div>
+    <p class="feedback-text">{{ currentFeedback.largeText }}</p>
+  </div>
+  <div class="navigation">
+    <button (click)="previous()">&#9664;</button>
+    <button (click)="next()">&#9654;</button>
+  </div>
+</div>
