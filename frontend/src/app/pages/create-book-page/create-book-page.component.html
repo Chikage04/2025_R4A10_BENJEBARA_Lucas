@@ -1,0 +1,21 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="bookForm">
+    <label for="title">Title:</label>
+    <input id="title" formControlName="title" />
+    @if (bookForm.get('title')?.invalid && bookForm.get('title')?.touched) {
+      <p>Title is invalid.</p>
+    }
+  
+    <label for="author">Author:</label>
+    <input id="author" formControlName="author" />
+    @if (bookForm.get('author')?.invalid && bookForm.get('author')?.touched) {
+      <p>Author is invalid.</p>
+    }
+  
+    <label for="description">Description:</label>
+    <textarea id="description" formControlName="description"></textarea>
+    @if (bookForm.get('description')?.invalid && bookForm.get('description')?.touched) {
+      <p>Invalid</p>
+    }
+  
+    <button type="submit" [disabled]="bookForm.invalid">Add Book</button>
+  </form>
