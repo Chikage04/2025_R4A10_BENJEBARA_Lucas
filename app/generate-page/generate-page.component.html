@@ -1,0 +1,15 @@
+<div class="generate-page">
+  <h1>Créez un voyage aléatoire !</h1>
+  <p>Cliquez sur le bouton pour générer un voyage unique.</p>
+  <button (click)="generateVoyage()" class="generate-button">Générer un voyage</button>
+
+  <div *ngIf="generatedVoyage" class="generated-voyage">
+    <h2>Voyage généré</h2>
+    <div class="voyage-details">
+      <p><strong>Destination:</strong> {{ generatedVoyage.destination }}</p>
+      <p><strong>Description:</strong> {{ generatedVoyage.description }}</p>
+      <p><strong>Prix:</strong> {{ generatedVoyage.price | currency: 'EUR' }}</p>
+    </div>
+    <button (click)="validateVoyage()" class="validate-button">Valider la création</button>
+  </div>
+</div>

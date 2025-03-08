@@ -1,0 +1,27 @@
+main {
+  width: 100%;
+  flex: 1;
+}
+
+footer {
+  background-color: #2980b9;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+  border-top: 2px solid #34495e;
+}
+
+footer .container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 25px;
+}
+
+footer p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+footer p:hover {
+  color: #ddd;
+}

@@ -1,0 +1,20 @@
+<div class="voyages-list">
+  <h2>Nos Voyages</h2>
+  <ul class="grid">
+  </ul>
+
+  <div class="pagination">
+    <button id="prevButton" (click)="prevPage()" [disabled]="currentPage === 1">Précédent</button>
+    <span class="page-info">Page {{ currentPage }}</span>
+    <button id="nextButton" >Suivant</button>
+  </div>
+
+    <div id="confirmationDialog" class="overlay" style="display: none;">
+      <div class="modal">
+        <h2>Confirmation</h2>
+        <p>Êtes-vous sûr de vouloir supprimer ce voyage ?</p>
+        <button id="confirmDeleteButton">Oui</button>
+        <button id="cancelDeleteButton">Annuler</button>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<p>Bienvenue sur la page détail n°{{ id }}</p>
+<p>Voyage : {{ voyage?.destination | uppercase }}</p>
+<p>Description: {{ voyage?.description }}</p>
+<p>Prix: {{ voyage?.price }} EUR</p>
+
+<!-- Bouton pour supprimer le voyage -->
+<button (click)="showDeleteConfirmation()">Supprimer ce voyage</button>
+
+<!-- Boîte de dialogue modale (initialement cachée) -->
+<div id="confirmationDialog" class="modal-overlay" style="display: none;">
+  <div class="modal-content">
+    <h2>Confirmation</h2>
+    <p>Êtes-vous sûr de vouloir supprimer ce voyage ?</p>
+    <button id="confirmDeleteButton">Oui</button>
+    <button id="cancelDeleteButton">Annuler</button>
+  </div>
+</div>

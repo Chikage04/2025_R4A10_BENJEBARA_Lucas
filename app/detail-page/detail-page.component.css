@@ -1,0 +1,18 @@
+.modal-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50vw;
+  height: 50vh;
+  background: rgba(255, 255, 255, 0.8);
+  display: block;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.modal-content {
+  background: #a10e0e;
+  padding: 10em;
+  border-radius: 1em;
+  text-align: left;
+}
